@@ -1,12 +1,12 @@
 import React from 'react'
-import IronMan from './Iron_Man.jpg'
+import Image from './Image'
 
 const Card = ()=>{
+
 	return(
 		<div>
 			<div>
-				<img src={IronMan} width='200' height='400' alt='Iron Man'/>
-				
+				<Image display='Hulk'/>
 			</div>
 			
 		</div>
@@ -14,3 +14,5 @@ const Card = ()=>{
 }
 
 export default Card;
+
+//<Image value=/>
