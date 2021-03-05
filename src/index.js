@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'tachyons'
-//import Card from './Card';
+import Card from './Card';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <div className='tc'>
   	<h1>Welcome to Avengers portal</h1>
+  	<Card/>
   </div>,
   document.getElementById('root')
 );
