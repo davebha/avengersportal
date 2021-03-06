@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'tachyons'
+import 'tachyons-floats'
 import CardList from './CardList';
 import { avengersProfile } from './avengersProfile'
 import reportWebVitals from './reportWebVitals';
