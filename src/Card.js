@@ -4,7 +4,7 @@ import Image from './Image'
 const Card = ({heroName,name})=>{
 
 	return(
-		<div>
+		<div className='tc bg-white dib br3 pa3 ma3 grow bw2 shadow-5'>
 			<div>
 				<Image display={heroName}/>
 			</div>
