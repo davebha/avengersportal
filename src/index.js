@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'tachyons'
-import Card from './Card';
-import avengersProfile from './avengersProfile'
+import CardList from './CardList';
+import { avengersProfile } from './avengersProfile'
 import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
   <div className='tc'>
-  	<h1>Welcome to Avengers portal</h1>
-  	<Card  />
+  	<h1  >Welcome to Avengers portal</h1>
+  	<CardList avengers={avengersProfile}  />
   </div>,
   document.getElementById('root')
 );

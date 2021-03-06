@@ -1,4 +1,4 @@
-const avengers=[
+export const avengersProfile =[
 	{
 		name:"Tony Stark",
 		heroName:"Iron Man",
@@ -24,4 +24,4 @@ const avengers=[
 		heroName:"Hawkeye",
 		imageAddress:"./Hawkeye.png"
 	}
-]
+];

@@ -1,14 +1,16 @@
 import React from 'react'
 import Image from './Image'
 
-const Card = ()=>{
+const Card = ({heroName,name})=>{
 
 	return(
 		<div>
 			<div>
-				<Image display='Hulk'/>
+				<Image display={heroName}/>
 			</div>
-			
+			<div>
+				<p>{name}</p>
+			</div>
 		</div>
 		);
 }
