@@ -14,8 +14,12 @@ class Card extends Component{
 		}
 	}
 
-     handleDownarrowClick=()=>{
+    handleDownarrowClick=()=>{
 		  this.setState({displayConnectionsInfo:true},() => { console.log('new state', this.state); })
+	}
+
+	handleUparrowClick=()=>{
+		  this.setState({displayConnectionsInfo:false},() => { console.log('new state', this.state); })
 	}
 
 	render(){
@@ -39,17 +43,17 @@ class Card extends Component{
 							</div>						
 									{
 										displayConnectionsInfo?
-										(<div >
+										(<div className="v-top">
 												<br/>
 												<br/>
 												<hr />
 												<h1>Connections</h1>
-												<h2>{this.props.connections}</h2>	
 												{connectionsImage}
-												<Uparrow />															
+												<h3>{this.props.connections}</h3>	
+												<Uparrow clickChange={this.handleUparrowClick} />															
 										</div>)
 										 :
-										<div>
+										<div >
 												{
 													connections?(						
 														<Downarrow clickChange={this.handleDownarrowClick}/>
