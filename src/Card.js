@@ -2,7 +2,7 @@ import React,{ Component } from 'react'
 import Image from './Image'
 import  Rightarrow from './Rightarrow'
 import Downarrow from './Downarrow'
-
+import Uparrow from './Uparrow'
 
 
 class Card extends Component{
@@ -74,6 +74,6 @@ class Card extends Component{
 export default Card;
 
 
-////import Uparrow from './Uparrow'
+
 //const connectionsImage = <img src='Laura_Barton.png' width='200' height='400' alt='Laura_Barton'/>
 //{connectionsImage}<h2>{this.props.connections}</h2>		
