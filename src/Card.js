@@ -21,7 +21,8 @@ class Card extends Component{
 	render(){
 		const displayConnectionsInfo=this.state.displayConnectionsInfo;
 		const connections = this.props.connections;
-		
+		const connectionsImage = <img src='Laura_Barton.png' width='200' height='400' alt='Laura_Barton'/>
+
 
 				return (<div className='tc bg-white dib br3 pa2 ma3 grow bw2 shadow-5 fn v-top'>
 							<div >
@@ -30,7 +31,7 @@ class Card extends Component{
 							<div >
 								<h1>{this.props.heroName}</h1>
 								<h3>{this.props.name}</h3>
-								<h2>{this.props.connections}</h2>		
+									
 							</div>
 
 							<div className='fr'>	
@@ -43,6 +44,8 @@ class Card extends Component{
 												<br/>
 												<hr />
 												<h1>Connections</h1>
+												<h2>{this.props.connections}</h2>	
+												{connectionsImage}
 												<Uparrow />															
 										</div>)
 										 :
@@ -68,5 +71,3 @@ export default Card;
 
 
 
-//const connectionsImage = <img src='Laura_Barton.png' width='200' height='400' alt='Laura_Barton'/>
-//{connectionsImage}
