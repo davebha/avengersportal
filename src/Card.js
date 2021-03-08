@@ -15,7 +15,7 @@ class Card extends Component{
 	}
 
      handleDownarrowClick=()=>{
-		  this.setState( prevState=>{displayConnectionsInfo:},() => { console.log('new state', this.state); })
+		  this.setState({displayConnectionsInfo:true},() => { console.log('new state', this.state); })
 	}
 
 	render(){
