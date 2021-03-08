@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Downarrow = ()=>{
-	return(<input  className='styled' type="submit" value="&#8964;"/>)
+const Downarrow = ({ clickChange })=>{
+	return(<button  onClick={clickChange} className='styled'>&#8964;</button>)
 }
 
 export  default Downarrow;
