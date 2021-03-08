@@ -12,19 +12,11 @@ class Card extends Component{
 		this.state={
 			displayConnectionsInfo:false
 		}
-		//this.handleDownarrowClick=this.handleDownarrowClick.bind(this)
-
 	}
 
      handleDownarrowClick=()=>{
-
-     	/*this.setState(()=>({
-      				displayConnectionsInfo:!prevState.displayConnectionsInfo
-    		}));*/
-		// this.setState({ displayConnectionsInfo:true },()=>{console.log(this.state.displayConnectionsInfo)});
-		//this.setState(prevState=>{return{displayConnectionsInfo:!prevState.displayConnectionsInfo,}})
-
-		  this.setState({displayConnectionsInfo:true},() => { console.log('new state', this.state); })}
+		  this.setState( prevState=>{displayConnectionsInfo:},() => { console.log('new state', this.state); })
+	}
 
 	render(){
 		const displayConnectionsInfo=this.state.displayConnectionsInfo;
@@ -38,6 +30,7 @@ class Card extends Component{
 							<div >
 								<h1>{this.props.heroName}</h1>
 								<h3>{this.props.name}</h3>
+								<h2>{this.props.connections}</h2>		
 							</div>
 
 							<div className='fr'>	
@@ -76,4 +69,4 @@ export default Card;
 
 
 //const connectionsImage = <img src='Laura_Barton.png' width='200' height='400' alt='Laura_Barton'/>
-//{connectionsImage}<h2>{this.props.connections}</h2>		
+//{connectionsImage}
