@@ -49,24 +49,21 @@ class Card extends Component{
 												<br/>
 												<br/>
 												<hr />
-												<h1>Connections</h1>															
-										</div>):<div>
+												<h1>Connections</h1>
+												<Uparrow />															
+										</div>)
+										 :
+										<div>
 												{
 													connections?(						
 														<Downarrow clickChange={this.handleDownarrowClick}/>
 													):(null)
 												}
-												</div>
+										</div>
 									}		
 
 						</div>)
 				
-
-
-
-
-		
-
 	}
 
 
@@ -76,7 +73,7 @@ class Card extends Component{
 
 export default Card;
 
-//<Uparrow />
+
 ////import Uparrow from './Uparrow'
 //const connectionsImage = <img src='Laura_Barton.png' width='200' height='400' alt='Laura_Barton'/>
 //{connectionsImage}<h2>{this.props.connections}</h2>		
