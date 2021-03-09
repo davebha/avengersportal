@@ -24,39 +24,35 @@ class Card extends Component{
 
 	render(){
 		const displayConnectionsInfo=this.state.displayConnectionsInfo;
-		const connections = this.props.connections;
+		const connectionsList = this.props.connections;
 		const connectionsImage = <img src='Laura_Barton.png' width='200' height='400' alt='Laura_Barton'/>
 
 
-				return (<div className='tc bg-white dib br3 pa2 ma3 grow bw2 shadow-5 fn v-top'>
-							<div >
+				return (<div className='tc bg-white dib br3 pa1 ma3  bw2 shadow-5 fn v-top'>
+							<div className='grow'>
 								<Image   display={this.props.heroName}/>			
 							</div>
-							<div >
-								<h1>{this.props.heroName}</h1>
+							<div className='grow'>
+								<h2>{this.props.heroName}</h2>
 								<h3>{this.props.name}</h3>
 									
-							</div>
-
-							<div className='fr'>	
-								<Rightarrow />
-							</div>						
+							</div>					
 									{
 										displayConnectionsInfo?
-										(<div className="v-top">
+										(<div>
 												<br/>
 												<br/>
 												<hr />
 												<h1>Connections</h1>
 												{connectionsImage}
-												<h3>{this.props.connections}</h3>	
+												<Connections hero={this.props.heroName}/>	
 												<Uparrow clickChange={this.handleUparrowClick} />															
 										</div>)
 										 :
 										<div >
 												{
 													connections?(						
-														<Downarrow clickChange={this.handleDownarrowClick}/>
+														<Downarrow className='grow' clickChange={this.handleDownarrowClick}/>
 													):(null)
 												}
 										</div>

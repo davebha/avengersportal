@@ -3,19 +3,19 @@ export const avengersProfile =[
 		name:"Tony Stark",
 		heroName:"Iron Man",
 		imageAddress:"./Iron_Man.jpg",
-		connections:"Pepper Potts"
+		connections:{"Howard Stark","Maria Stark","Pepper Potts"}
 	},
 	{
 		name:"Steve Rogers",
 		heroName:"Captain America",
 		imageAdress:"./Captain_America.jpg",
-		connections:""
+		connections:{"Bucky Barnes","Peggy Carter"}
 	},
 	{
 		name:"Bruce Banner",
 		heroName:"Hulk",
 		imageAddress:"./Hulk.jpg",
-		connections:""
+		connections:{"Betty Ross","Sgnt. Ross"}
 	},
 	{
 		name:"Natasha Romanoff",
