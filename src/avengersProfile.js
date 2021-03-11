@@ -11,14 +11,21 @@ export const avengersProfile =[
 		heroName:"Captain America",
 		imageAdress:"./Captain_America.jpg",
 		//connections:"Bucky Barnes,Peggy Carter"
-		connections:{0:"Bucky Barnes",1:"Peggy Carter"}
+		connections:{0:"James Barnes",1:"Margaret Carter"}
+	},
+	{
+		name:"Thor Odinson",
+		heroName:"Thor",
+		imageAdress:"./Thor.jpg",
+		//connections:"Bucky Barnes,Peggy Carter"
+		connections:{0:"Jane Foster",1:"Loki"}
 	},
 	{
 		name:"Bruce Banner",
 		heroName:"Hulk",
 		imageAddress:"./Hulk.jpg",
 		//connections:"Betty Ross,Sgnt. Ross"
-		connections:{0:"Betty Ross",1:"Sgnt. Ross"}
+		connections:{0:"Betty Ross",1:"Sgnt Ross"}
 	},
 	{
 		name:"Natasha Romanoff",

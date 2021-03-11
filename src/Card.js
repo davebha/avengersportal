@@ -45,7 +45,7 @@ class Card extends Component{
 												<br/>
 												<hr />
 												<h1>Connections</h1>
-												
+
 												<Connections data={connectionsList}/>	
 												<Uparrow clickChange={this.handleUparrowClick} />															
 										</div>)
