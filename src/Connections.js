@@ -12,15 +12,16 @@ const processData=()=>{
 
 	for(let  item in data){
 		imageName=data[item].split(" ");
-		imageName=`${imageName[0]}_${imageName[1]}`
+		if(imageName.length>1){
+			imageName=`${imageName[0]}_${imageName[1]}`	
+		}else{
+			imageName=`${imageName[0]}`
+		}
+		
 		imagePath=`${imageName}.png`
 		
 		//?  :
 		//imagePath=isValidPath(imageName,'png');
-
-			
-			
-			
 
 		elements.push(<img className='grow' src={imagePath} width='200' height='400' alt={`${imageName}`}/>)
 		elements.push(<h3 key={item} className='gray'>{data[item]}</h3>);
