@@ -1,16 +1,17 @@
 import React,{ Component } from 'react'
+import { createPopper } from '@popperjs/core';
 import Image from './Image'
-import  Rightarrow from './Rightarrow'
 import Downarrow from './Downarrow'
 import Uparrow from './Uparrow'
 import Connections from './Connections'
-
+import Across from './Across'
 class Card extends Component{
 
 	constructor(props){
 		super(props);
 		this.state={
 			displayConnectionsInfo:false
+			
 		}
 	}
 
@@ -22,22 +23,26 @@ class Card extends Component{
 		  this.setState({displayConnectionsInfo:false},() => { console.log('new state', this.state); })
 	}
 
+
 	render(){
 		const displayConnectionsInfo=this.state.displayConnectionsInfo;
 		const connectionsList = this.props.connections;
-
-				return (<div className='tc bg-white dib br3 pa1 ma3  bw2 shadow-5 fn v-top'>
-							<div className='grow'>
-								<Image   display={this.props.heroName}/>			
+		
+					   
+				return (<div className='tc bg-white dit br3 pa1 ma3  bw2 shadow-5 fn v-top'>
+					
+							<div className=' grow'>
+								<Image  className='fl' display={this.props.heroName}/>		
+										
 							</div>
+							<Across />
 							<div className='grow'>
 								<h2>{this.props.heroName}</h2>
-								<h3>{this.props.name}</h3>
-															
+								<h3>{this.props.name}</h3>	
+
 							</div>	
-							<div className='fr'>
-								<Rightarrow />
-							</div>				
+									
+									
 									{
 										displayConnectionsInfo?
 										(<div>
@@ -58,7 +63,7 @@ class Card extends Component{
 												}
 										</div>
 									}		
-
+							
 						</div>)
 				
 	}
