@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/avengersportal/static/css/main.4fb5c887.chunk.css",
+    "main.js": "/avengersportal/static/js/main.5a3c0e56.chunk.js",
+    "main.js.map": "/avengersportal/static/js/main.5a3c0e56.chunk.js.map",
+    "runtime-main.js": "/avengersportal/static/js/runtime-main.6662876d.js",
+    "runtime-main.js.map": "/avengersportal/static/js/runtime-main.6662876d.js.map",
+    "static/css/2.25523cf8.chunk.css": "/avengersportal/static/css/2.25523cf8.chunk.css",
+    "static/js/2.b8e09f69.chunk.js": "/avengersportal/static/js/2.b8e09f69.chunk.js",
+    "static/js/2.b8e09f69.chunk.js.map": "/avengersportal/static/js/2.b8e09f69.chunk.js.map",
+    "static/js/3.784ed303.chunk.js": "/avengersportal/static/js/3.784ed303.chunk.js",
+    "static/js/3.784ed303.chunk.js.map": "/avengersportal/static/js/3.784ed303.chunk.js.map",
+    "index.html": "/avengersportal/index.html",
+    "static/css/2.25523cf8.chunk.css.map": "/avengersportal/static/css/2.25523cf8.chunk.css.map",
+    "static/css/main.4fb5c887.chunk.css.map": "/avengersportal/static/css/main.4fb5c887.chunk.css.map",
+    "static/js/2.b8e09f69.chunk.js.LICENSE.txt": "/avengersportal/static/js/2.b8e09f69.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6662876d.js",
+    "static/css/2.25523cf8.chunk.css",
+    "static/js/2.b8e09f69.chunk.js",
+    "static/css/main.4fb5c887.chunk.css",
+    "static/js/main.5a3c0e56.chunk.js"
+  ]
+}
